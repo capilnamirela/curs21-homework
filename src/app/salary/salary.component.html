@@ -1,0 +1,41 @@
+<div class="center">
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Nume</th>
+                <th>Prenume</th>
+                <th>CNP</th>
+                <th>Adresa</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let salaryDatePersonale of salariesDatePersonale">
+                    <td>{{salaryDatePersonale.marca}}</td>
+                    <td>{{salaryDatePersonale.nume}}</td>
+                    <td>{{salaryDatePersonale.prenume}}</td>
+                    <td>{{salaryDatePersonale.cnp}}</td>
+                    <td>{{salaryDatePersonale.adresa}}</td>
+                </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>DataAngajariiUnitate</th>
+                <th>Departament</th>
+                <th>Functia</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let salaryDateAngajareUnitate of salariesDateAngajareUnitate">
+                    <td>{{salaryDateAngajareUnitate.marca}}</td>
+                    <td>{{salaryDateAngajareUnitate.dataAngajariiUnitate}}</td>
+                    <td>{{salaryDateAngajareUnitate.departament}}</td>
+                    <td>{{salaryDateAngajareUnitate.functie}}</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
