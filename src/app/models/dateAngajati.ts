@@ -1,4 +1,4 @@
-export interface SalaryDatePersonale{
+export interface DateAngajatiModel{
 marca: number,
 nume:string,
 prenume:string,

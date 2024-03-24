@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SalaryComponent } from './salary.component';
+import { DateAngajareComponent } from './date-angajare.component';
 
-describe('SalaryComponent', () => {
-  let component: SalaryComponent;
-  let fixture: ComponentFixture<SalaryComponent>;
+describe('DateAngajareComponent', () => {
+  let component: DateAngajareComponent;
+  let fixture: ComponentFixture<DateAngajareComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SalaryComponent]
+      imports: [DateAngajareComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SalaryComponent);
+    fixture = TestBed.createComponent(DateAngajareComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

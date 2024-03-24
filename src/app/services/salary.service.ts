@@ -9,12 +9,8 @@ export class SalaryService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getDatePersonale(): Observable<any>{
-    return this.httpClient.get("http://localhost:8080/angajati/datePersonale")
-  }
-
   getDateAngajareUnitate(): Observable<any>{
-    return this.httpClient.get("http://localhost:8080/angajati/dateAngajareUnitate")
+    return this.httpClient.get("http://localhost:8080/aplicatie_salarizare/date_angajare_unitate")
   }
 
 

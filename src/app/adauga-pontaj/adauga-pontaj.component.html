@@ -1,0 +1,38 @@
+<div>
+
+    <form [formGroup]="adaugaPontaj">
+        <div>
+            <form [formGroup]="adaugaPontaj">
+                <div class="dialog-format">
+                    <label for="marca">Marca</label>
+                    <input matInput id="marca" type="text" formControlName="marca">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="zileLucratoare">Zile lucratoare</label>
+                    <input matInput id="zileLucratoare" type="text" formControlName="zileLucratoare">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="zileLucrate">Zile lucrate</label>
+                    <input matInput id="zileLucrate" type="text" formControlName="zileLucrate">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="zileCO">Zile CO</label>
+                    <input matInput id="zileCO" type="text" formControlName="zileCO">
+                </div>
+
+                <div class="dialog-format">
+                    <label for="zileCFS">Zile CFS</label>
+                    <input matInput id="zileCFS" type="text" formControlName="zileCFS">
+                </div>
+        
+               
+        <div>
+            <button class="save-button" style="margin: 10px 10px 10px 10px;"  [disabled]="!adaugaPontaj.valid" type="submit" (click)="onSubmit()"> Save </button>
+            <button class="cancel-button" (click)="close()"> Cancel</button>
+        </div>
+    </form>
+   
+</div>

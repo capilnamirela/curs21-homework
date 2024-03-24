@@ -1,0 +1,46 @@
+.dialog-format{
+    display: block;
+    position: relative;
+    margin: 5px auto;
+    width: 70%;
+    padding: 1px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dialog-format input {
+    border: none; 
+    outline: none;
+    width: calc(100% - 16px); 
+    margin: 0 auto; 
+    text-align: center; 
+  }
+
+  .cancel-button{
+   
+    margin:auto;
+    width: 45%;
+    padding: 1px;
+    background-color: lightgray;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px gray;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+      }
+
+   .save-button{
+   
+    margin:auto;
+    width: 45%;
+    padding: 1px;
+    background-color: lightblue;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px gray;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    }

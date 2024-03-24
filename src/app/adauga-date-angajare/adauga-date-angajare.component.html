@@ -1,0 +1,34 @@
+<div>
+
+    <form [formGroup]="adaugaDateAngajare">
+        <div>
+            <form [formGroup]="adaugaDateAngajare">
+
+                <div class="dialog-format">
+                    <label for="marca">Marca</label>
+                    <input matInput id="marca" type="text" formControlName="marca">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="dataAngajare">Data Angajarii</label>
+                    <input matInput id="dataAngajare" type="text" formControlName="dataAngajare">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="departament">Departament</label>
+                    <input matInput id="departament" type="text" formControlName="departament">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="functie">Functie</label>
+                    <input matInput id="functie" type="text" formControlName="functie">
+                </div>
+        
+                
+        <div>
+            <button class="save-button" style="margin: 10px 10px 10px 10px;"  [disabled]="!adaugaDateAngajare.valid" type="submit" (click)="onSubmit()"> Save </button>
+            <button class="cancel-button" (click)="close()"> Cancel</button>
+        </div>
+    </form>
+   
+</div>

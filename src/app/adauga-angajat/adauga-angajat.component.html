@@ -1,0 +1,37 @@
+<div>
+
+    <form [formGroup]="adaugaAngajat">
+        <div>
+            <form [formGroup]="adaugaAngajat">
+                <div class="dialog-format">
+                    <label for="marca">Marca</label>
+                    <input matInput id="marca" type="text" formControlName="marca">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="nume">Nume</label>
+                    <input matInput id="nume" type="text" formControlName="nume">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="prenume">Prenume</label>
+                    <input matInput id="prenume" type="text" formControlName="prenume">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="cnp">CNP</label>
+                    <input matInput id="cnp" type="text" formControlName="cnp">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="adresa">Adresa</label>
+                    <input matInput id="adresa" type="text" formControlName="adresa">
+                </div>
+
+        <div>
+            <button class="save-button" style="margin: 10px 10px 10px 10px;"  [disabled]="!adaugaAngajat.valid" type="submit" (click)="onSubmit()"> Save </button>
+            <button class="cancel-button" (click)="close()"> Cancel</button>
+        </div>
+    </form>
+   
+</div>

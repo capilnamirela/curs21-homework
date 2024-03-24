@@ -1,0 +1,66 @@
+<h1 class="title-format-salarii">Date Salariale</h1>
+
+<div class="mat-z8 card">
+
+  <div>
+    <button class="button-format-adauga-salarii" (click)="openDialog()"> adauga date salariale  </button>
+  </div>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="Marca">
+      <th mat-header-cell *matHeaderCellDef> Marca </th>
+      <td mat-cell *matCellDef="let dateSalariale"> {{dateSalariale.marca}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="SalariuIncadrare">
+      <th mat-header-cell *matHeaderCellDef> Salariu Incadrare </th>
+      <td mat-cell *matCellDef="let dateSalariale"> {{dateSalariale.salariuIncadrare}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="AlteDrepturi">
+      <th mat-header-cell *matHeaderCellDef> Alte Drepturi </th>
+      <td mat-cell *matCellDef="let dateSalariale"> {{dateSalariale.alteDrepturi}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="TicheteMasa">
+      <th mat-header-cell *matHeaderCellDef> Tichete Masa/zi lucrata</th>
+      <td mat-cell *matCellDef="let dateSalariale"> {{dateSalariale.ticheteMasa}} </td>
+    </ng-container>
+  
+        
+    <ng-container matColumnDef="Actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let dateSalariale">
+         <button class="update-button-salarii" (click)="openDialog(dateSalariale)"> UPDATE </button>
+         <button class="delete-button-salarii" (click)="deleteDateSalariale(dateSalariale.marca)"> DELETE </button>
+         
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]"  
+                  showFirstLastButtons                            
+                 aria-label="Select page">
+                 [length] = "100"                
+  </mat-paginator>
+
+
+  
+
+</div>
+  
+
+
+
+
+
+
+
+
+
+

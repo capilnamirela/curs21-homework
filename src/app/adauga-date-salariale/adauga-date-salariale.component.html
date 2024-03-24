@@ -1,0 +1,33 @@
+<div>
+
+    <form [formGroup]="adaugaDateSalariale">
+        <div>
+            <form [formGroup]="adaugaDateSalariale">
+                <div class="dialog-format">
+                    <label for="marca">Marca</label>
+                    <input matInput id="marca" type="text" formControlName="marca">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="salariuIncadrare">Salariu Incadrare</label>
+                    <input matInput id="salariuIncadrare" type="text" formControlName="salariuIncadrare">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="alteDrepturi">Alte Drepturi</label>
+                    <input matInput id="alteDrepturi" type="text" formControlName="alteDrepturi">
+                </div>
+        
+                <div class="dialog-format">
+                    <label for="ticheteMasa">Tichete Masa</label>
+                    <input matInput id="ticheteMasa" type="text" formControlName="ticheteMasa">
+                </div>
+        
+               
+        <div>
+            <button class="save-button" style="margin: 10px 10px 10px 10px;"  [disabled]="!adaugaDateSalariale.valid" type="submit" (click)="onSubmit()"> Save </button>
+            <button class="cancel-button" (click)="close()"> Cancel</button>
+        </div>
+    </form>
+   
+</div>
